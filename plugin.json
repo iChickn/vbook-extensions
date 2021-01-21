@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "author": "LP",
+    "description": "Có làm thì mới có ăn"
+  },
+  "data": [
+    {
+      "name": "Truyendocnhieu",
+      "author": "LP",
+      "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/beeng/plugin.zip",
+      "version": 1,
+      "source": "https://truyendocnhieu.com",
+      "icon": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/beeng/icon.png",
+      "description": "Đọc truyện trên trang Beeng.net"
+    }
+  ]
+}

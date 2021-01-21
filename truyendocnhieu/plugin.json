@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Truyendocnhieu",
+    "author": "LP",
+    "version": 1,
+    "source": "https://truyendocnhieu.com",
+    "regexp": "truyendocnhieu.com/[^/]+$",
+    "description": "Đọc truyện trên trang truyendocnhieu.com",
+    "local": "vi-VN",
+    "language": "javascript"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
