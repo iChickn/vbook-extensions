@@ -7,10 +7,10 @@
     {
       "name": "Truyendocnhieu",
       "author": "LP",
-      "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/beeng/plugin.zip",
+      "path": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/truyendocnhieu/plugin.zip",
       "version": 1,
       "source": "https://truyendocnhieu.com",
-      "icon": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/beeng/icon.png",
+      "icon": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/truyendocnhieu/icon.png",
       "description": "Đọc truyện trên trang Beeng.net"
     }
   ]
