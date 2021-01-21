@@ -3,6 +3,7 @@ function execute(url, page) {
     
     const doc = Http.get(url).params({"page": page}).html();
     const booksList = doc.select("#category-books-container > div > ul > li");
+    var next = doc.select('.box-page-view').select('a.active + a').text();
     const data = [];
 
     for (var i = 0; i < booksList.size(); i++) {
@@ -15,5 +16,5 @@ function execute(url, page) {
             host: "https://truyendocnhieu.com/"
         });
     }
-    return Response.success(data, page++)
+    return Response.success(data, next)
 }
