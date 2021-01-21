@@ -1,2 +1,2 @@
 # vbook-extensions
-LP
+Có làm thì mới có ăn ...
