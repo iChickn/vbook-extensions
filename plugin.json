@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "author": "LP",
+    "author": "iChickn",
     "description": "Có làm thì mới có ăn"
   },
   "data": [
     {
       "name": "Truyendocnhieu",
-      "author": "LP",
+      "author": "iChickn",
       "path": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/truyendocnhieu/plugin.zip",
-      "version": 10,
+      "version": 11,
       "source": "https://truyendocnhieu.com",
       "icon": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/truyendocnhieu/icon.png",
       "description": "Đọc truyện trên trang truyendocnhieu.com"
