@@ -11,12 +11,17 @@ function execute(url) {
         });
     }
 
+    var author = doc.select(".info-book .r-if-book").first().text();
+    var status = doc.select(".info-book .r-if-book").last().text();
+    var detail = "Tác giả: " + author + "\nThể loại: " + doc.select(".info-book .r-if-book")[1].text() + "\nTình trạng: " + status;
+    detail = detail + "\n" + doc.select(".book-thum img").first().attr("data-src");
+
     return Response.success({
         name: doc.select("h1.hl-name-book").text(),
         cover: doc.select(".book-thum img").first().attr("data-src"),
-        author: doc.select(".info-book .r-if-book").first().text(),
+        author: author,
         description: doc.select(".box-show-des").html().trim().split("\n").splice(1).join("\n").trim(),
-        detail: doc.select(".info-book .r-if-book").last().text(),
+        detail: detail,
         category: category,
         host: "https://truyendocnhieu.com"
     });
