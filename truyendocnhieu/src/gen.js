@@ -11,8 +11,8 @@ function execute(url, page) {
         data.push({
             name: book.select(".box-book-info .name-book").text(),
             link: book.select(".box-book-info .name-book").attr("href"),
-            cover: book.select(".img img").attr("src"),
-            description: book.select(".img img").attr("src"),
+            cover: book.select(".lozad").first().attr("src"),
+            description: book.select(".lozad").first().attr("src") + book.select(".lozad").attr("data-src"),
             host: "https://truyendocnhieu.com/"
         });
     }
