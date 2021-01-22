@@ -1,8 +1,8 @@
 {
   "metadata": {
     "name": "Truyendocnhieu",
-    "author": "LP",
-    "version": 15,
+    "author": "iChickn",
+    "version": 16,
     "source": "https://truyendocnhieu.com",
     "regexp": "truyendocnhieu.com/[^/]+$",
     "description": "Đọc truyện trên trang truyendocnhieu.com",
