@@ -4,5 +4,5 @@ function execute(url) {
     doc = JSON.parse(doc);
     data.push(doc.chapter.content.replaceAll('</p>', ''));
     
-    return Response.success(data);
+    return Response.success(doc.chapter.content);
 }

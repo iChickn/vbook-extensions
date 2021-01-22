@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Truyendocnhieu",
     "author": "LP",
-    "version": 14,
+    "version": 15,
     "source": "https://truyendocnhieu.com",
     "regexp": "truyendocnhieu.com/[^/]+$",
     "description": "Đọc truyện trên trang truyendocnhieu.com",
