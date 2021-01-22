@@ -5,14 +5,14 @@ function execute(url, page) {
     const booksList = doc.select("#category-books-container > div > ul > li");
     var next = doc.select('.box-page-view').select('a.active + a').text();
     const data = [];
-
+    //book.select(".box-book-info .info-book-des").text()
     for (var i = 0; i < booksList.size(); i++) {
         var book = booksList.get(i);
         data.push({
             name: book.select(".box-book-info .name-book").text(),
             link: book.select(".box-book-info .name-book").attr("href"),
-            cover: book.select(".img img").first().attr("src"),
-            description: book.select(".box-book-info .info-book-des").text(),
+            cover: book.select(".img img").attr("src"),
+            description: book.select(".img img").attr("src"),
             host: "https://truyendocnhieu.com/"
         });
     }
