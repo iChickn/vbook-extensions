@@ -8,7 +8,7 @@ function execute(url) {
 
     chaps.forEach(chap => {
         data.push({
-            name: chap.name,
+            name: chap.name.trim(),
             url: "https://truyendocnhieu.com/ajax/books/" + bookId + "/chapters/" + chap._id + "?number=" + chap.number,
             host: "https://truyendocnhieu.com"
         })

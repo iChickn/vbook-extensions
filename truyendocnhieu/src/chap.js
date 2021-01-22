@@ -2,7 +2,7 @@ function execute(url) {
     var data = [];
     var doc = Http.get(url).string();
     doc = JSON.parse(doc);
-    data.push(doc.chapter.content.trim());
+    data.push(doc.chapter.content.replaceAll('<p></p>', '\n'));
     
     return Response.success(data);
 }
