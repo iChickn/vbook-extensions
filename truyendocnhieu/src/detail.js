@@ -14,14 +14,13 @@ function execute(url) {
     var author = doc.select(".info-book .r-if-book").first().text();
     var status = doc.select(".info-book .r-if-book").last().text();
     var detail = author + "<br/>" + status + "<br/>" + doc.select(".info-book .r-if-book")[1].text();
-    //doc.select(".box-show-des").text().trim().split("\n").splice(1).join("\n").trim()
 
     return Response.success({
         name: doc.select("h1.hl-name-book").text(),
         cover: doc.select(".book-thum img").first().attr("src"),
         author: author,
         description: doc.select(".box-show-des").html(),
-        detail: doc.select(".box-show-des").html(),
+        detail: detail,
         category: category,
         host: "https://truyendocnhieu.com"
     });
