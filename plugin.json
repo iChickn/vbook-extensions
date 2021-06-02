@@ -12,6 +12,15 @@
       "source": "https://truyendocnhieu.com",
       "icon": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/truyendocnhieu/icon.png",
       "description": "Đọc truyện trên trang truyendocnhieu.com"
+    },
+    {
+      "name": "Sáng Tác Việt",
+      "author": "Nhocconsr",
+      "path": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/sangtacviet/plugin.zip",
+      "version": 1,
+      "source": "https://sangtacviet.com",
+      "icon": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/sangtacviet/icon.png",
+      "description": "Đọc truyện trên trang Sangtacviet.com"
     }
   ]
 }
