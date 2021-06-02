@@ -7,68 +7,61 @@ function execute(url) {
     var bookhost = params[0];
     var booksty = params[1];
     var currentidc = '';
-    var newUrl = host + 'index.php?sajax=readchapter&bookid=' + bookid + '&h=' + bookhost + '&c2=' + currentidc + '&c=' + currentid + '&sty=' + booksty;
 
-    var chapterfetcher = new XMLHttpRequest();
-    chapterfetcher.open('POST', newUrl, true);
-    chapterfetcher.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    chapterfetcher.onreadystatechange = function () {
-        if (chapterfetcher.readyState === 4 && chapterfetcher.status === 200) {
-            var x = JSON.parse(chapterfetcher.responseText);
-            if (x.code === "0") {
-                var data = x.data;
-                data = data.replace(/<\/p>\r\n<p>/g, "<br><br>");
-                data = data.replace(/đạo ?<\/i>:/g, "nói</i>:");
-                data = data.replace(/&nbsp;&nbsp;&nbsp;&nbsp;/g, "<br>");
-                data = data.replace(/\n/g, "<br>");
-                data = data.replace(/(\w) \./g, "$1.");
-                data = data.replace(/((\w\.{1}[ \t])|(\w[!?]+(”|】)?))/g, "$1<br><br>");
-                data = data.replace(/<br( ?\/)?>/ig, "<br><br>");
-                data = data.replace(/(<br>(|\n|\t|\r| )*)+/g, "<br><br>");
-                data = data.replace(/([\w>])“/g, "$1 “");
-                data = data.replace(/(\w)<\/i><br>“/g, "$1</i>.<br>");
-                data = data.replace(/ ”/g, "”");
-                if (location.href.indexOf("uukanshu") > 0) {
-                    data = data.replace(/<div class="ad_content">.*?<\/div>/g, "");
-                }
-                if (location.href.indexOf("aikanshu") > 0) {
-                    data = data.replace(/<img.*?src="\/novel\/images.*?>/g, "");
-                }
-                if (location.href.indexOf("ciweimao") > 0) {
-                    data = data.replace(/<span>.*?<\/span>/g, "");
-                }
-                data = data.replace(/<a href=.*?<\/a>/g, "");
-                data = data.replace(/<br><br>([\)” 】!?]+)(<br>|$)/g, "$1$2");
-                data = data.replace(/ ([,’]) /g, "$1 ");
-                data = data.replace(/ ‘ /g, " ‘");
-                data = data.replace("<a&nbsp;href=\"http:", "");
+    var request = Http.post(host)
+    .headers({
+        'Content-type': 'application/x-www-form-urlencoded',
+        'Referer': url
+        })
+    .params({
+        'sajax': 'readchapter',
+        'sty': booksty,
+        'c': currentid,
+        'h': bookhost,
+        'bookid': bookid,
+        'c2': currentidc
+    });
+    var data = request.string();
+    var content = JSON.parse(data).data;
 
-                data = data.replace(/<\/p><br><br><p>/g, "<br><br>");
-                data = data.replace(/ ([,\.!\?”]+)/g, "$1");
-                data = data.replace("\ufffe", "");
-
-                return Response.success(data);
-            }
-        } else {
-            return Response.success('Không lấy được nội dung truyện!');
-        }
+    // content = content.replace(/&(amp|quot|lt|gt);/g, "");
+    // content = content.replace(/&nbsp;/g, " ");
+    // content = content.replace(/(nbsp|amp|quot|lt|gt|bp);/g, "");
+    // content = content.replace("@Bạn đang đọc bản lưu trong hệ thống", "");
+    // content = content.replace("UUKANSHU đọc sách www.uukanshu.com", "");
+    // content = content.replace("69 sách a www.69shu.org, đổi mới nhanh nhất Chương mới nhất!", "");
+    // content = content.replace(/<\/?i.*?>/g, "");
+    // content = content.replace(/\s{2,}/g, " ");
+    // content = content.replace(/<div\s+class="ad_content">[\S\s]*?<\/div>/gi, " ");
+    content = content.replace(/<\/p>\r\n<p>/g, "<br><br>");
+    content = content.replace(/đạo ?<\/i>:/g, "nói</i>:");
+    content = content.replace(/&nbsp;&nbsp;&nbsp;&nbsp;/g, "<br>");
+    content = content.replace(/\n/g, "<br>");
+    content = content.replace(/(\w) \./g, "$1.");
+    content = content.replace(/((\w\.{1}[ \t])|(\w[!?]+(”|】)?))/g, "$1<br><br>");
+    content = content.replace(/<br( ?\/)?>/ig, "<br><br>");
+    content = content.replace(/(<br>(|\n|\t|\r| )*)+/g, "<br><br>");
+    content = content.replace(/([\w>])“/g, "$1 “");
+    content = content.replace(/(\w)<\/i><br>“/g, "$1</i>.<br>");
+    content = content.replace(/ ”/g, "”");
+    if (url.indexOf("uukanshu") > 0) {
+        content = content.replace(/<div class="ad_content">.*?<\/div>/g, "");
     }
-    chapterfetcher.send("");
-    // browser.launch(newUrl, 10000)
-    // browser.waitUrl(".*?sajax=readchapter.*?", 10000)
-    // const doc = browser.html(2000)
+    if (url.indexOf("aikanshu") > 0) {
+        content = content.replace(/<img.*?src="\/novel\/images.*?>/g, "");
+    }
+    if (url.indexOf("ciweimao") > 0) {
+        content = content.replace(/<span>.*?<\/span>/g, "");
+    }
+    content = content.replace(/<a href=.*?<\/a>/g, "");
+    content = content.replace(/<br><br>([\)” 】!?]+)(<br>|$)/g, "$1$2");
+    content = content.replace(/ ([,’]) /g, "$1 ");
+    content = content.replace(/ ‘ /g, " ‘");
+    content = content.replace("<a&nbsp;href=\"http:", "");
 
-    // var content = doc.select("#maincontent").first().html();
-    // var content = content.replace(/&(amp|quot|lt|gt);/g, "");
-    // var content = content.replace(/&nbsp;/g, " ");
-    // var content = content.replace(/(nbsp|amp|quot|lt|gt|bp);/g, "");
-    // var content = content.replace("@Bạn đang đọc bản lưu trong hệ thống", "");
-    // var content = content.replace("UUKANSHU đọc sách www.uukanshu.com", "");
-    // var content = content.replace("69 sách a www.69shu.org, đổi mới nhanh nhất Chương mới nhất!", "");
-    // var content = content.replace(/<\/?i.*?>/g, "");
-    // var content = content.replace(/\s{2,}/g, " ");
-    // var content = content.replace(/<div\s+class="ad_content">[\S\s]*?<\/div>/gi, " ");
-    // browser.close()
+    content = content.replace(/<\/p><br><br><p>/g, "<br><br>");
+    content = content.replace(/ ([,\.!\?”]+)/g, "$1");
+    content = content.replace("\ufffe", "");
 
-    // return Response.success(content);
+    return Response.success(content);
 }

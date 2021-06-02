@@ -1,21 +1,21 @@
 {
-  "metadata": {
-    "name": "Sáng Tác Việt v2",
-    "author": "Nhocconsr + iChickn",
-    "version": 1,
-    "source": "https://sangtacviet.com",
-    "regexp": "(www.)?sangtacviet.com/truyen/([a-zA-Z0-9])+/\\d+/\\d+/?$",
-    "description": "Đọc truyện trên trang sangtacviet.com",
-    "local": "vi-VN",
-    "language": "javascript",
-    "type": "novel"
-  },
-  "script": {
-    "home" : "home.js",
-    "genre" : "genre.js",
-    "search" : "search.js",
-    "detail": "detail.js",
-    "toc": "toc.js",
-    "chap": "chap.js"
-  }
+    "metadata": {
+        "name": "Sáng Tác Việt v2",
+        "author": "Nhocconsr + iChickn",
+        "version": 1,
+        "source": "https://sangtacviet.com",
+        "regexp": "(www.)?sangtacviet.com/truyen/([a-zA-Z0-9])+/\\d+/\\d+/?$",
+        "description": "Đọc truyện trên trang sangtacviet.com",
+        "local": "vi-VN",
+        "language": "javascript",
+        "type": "novel"
+    },
+    "script": {
+        "home": "home.js",
+        "genre": "genre.js",
+        "search": "search.js",
+        "detail": "detail.js",
+        "toc": "toc.js",
+        "chap": "chap.js"
+    }
 }
