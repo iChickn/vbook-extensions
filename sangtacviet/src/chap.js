@@ -7,6 +7,14 @@ function execute(url) {
     var bookhost = params[0];
     var booksty = params[1];
     var currentidc = '';
+    var params = {
+        'sajax': 'readchapter',
+        'sty': booksty,
+        'c': currentid,
+        'h': bookhost,
+        'bookid': bookid,
+        'c2': currentidc
+    };
 
     var request = Http.post(host)
     .headers({
@@ -24,14 +32,14 @@ function execute(url) {
     var data = request.string();
     var content = JSON.parse(data).data;
 
-    // content = content.replace(/&(amp|quot|lt|gt);/g, "");
-    // content = content.replace(/&nbsp;/g, " ");
-    // content = content.replace(/(nbsp|amp|quot|lt|gt|bp);/g, "");
-    // content = content.replace("@Bạn đang đọc bản lưu trong hệ thống", "");
-    // content = content.replace("UUKANSHU đọc sách www.uukanshu.com", "");
-    // content = content.replace("69 sách a www.69shu.org, đổi mới nhanh nhất Chương mới nhất!", "");
-    // content = content.replace(/<\/?i.*?>/g, "");
-    // content = content.replace(/\s{2,}/g, " ");
+    content = content.replace(/&(amp|quot|lt|gt);/g, "");
+    content = content.replace(/&nbsp;/g, " ");
+    content = content.replace(/(nbsp|amp|quot|lt|gt|bp);/g, "");
+    content = content.replace("@Bạn đang đọc bản lưu trong hệ thống", "");
+    content = content.replace("UUKANSHU đọc sách www.uukanshu.com", "");
+    content = content.replace("69 sách a www.69shu.org, đổi mới nhanh nhất Chương mới nhất!", "");
+    content = content.replace(/<\/?i.*?>/g, "");
+    content = content.replace(/\s{2,}/g, " ");
     // content = content.replace(/<div\s+class="ad_content">[\S\s]*?<\/div>/gi, " ");
     content = content.replace(/<\/p>\r\n<p>/g, "<br><br>");
     content = content.replace(/đạo ?<\/i>:/g, "nói</i>:");
@@ -62,6 +70,8 @@ function execute(url) {
     content = content.replace(/<\/p><br><br><p>/g, "<br><br>");
     content = content.replace(/ ([,\.!\?”]+)/g, "$1");
     content = content.replace("\ufffe", "");
+
+    Console.log(content);
 
     return Response.success(content);
 }
