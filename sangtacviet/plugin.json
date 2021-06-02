@@ -2,7 +2,7 @@
     "metadata": {
         "name": "Sáng Tác Việt v2",
         "author": "Nhocconsr + iChickn",
-        "version": 1,
+        "version": 2,
         "source": "https://sangtacviet.com",
         "regexp": "(www.)?sangtacviet.com/truyen/([a-zA-Z0-9])+/\\d+/\\d+/?$",
         "description": "Đọc truyện trên trang sangtacviet.com",
