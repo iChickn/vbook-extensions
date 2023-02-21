@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "author": "vBook",
+    "description": ""
+  },
+  "data": [
+    {
+      "name": "uukanshu",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/uukanshu/plugin.zip",
+      "version": 7,
+      "source": "https://uukanshu.com",
+      "icon": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/uukanshu/icon.png",
+      "description": "Đọc truyện trên trang uukanshu.com",
+      "type": "chinese_novel",
+      "locale": "zh_CN"
+    },
+    {
+      "name": "biqubu",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/biqubu/plugin.zip",
+      "version": 4,
+      "source": "https://www.biqubu.com",
+      "icon": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/biqubu/icon.png",
+      "description": "Đọc truyện trên trang biqubu.com",
+      "type": "chinese_novel",
+      "locale": "zh_CN"
+    },
+    {
+      "name": "qiushubang",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/qiushubang/plugin.zip",
+      "version": 3,
+      "source": "http://www.qiushubang.me",
+      "icon": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/qiushubang/icon.png",
+      "description": "Đọc truyện trên trang qiushubang.me",
+      "type": "chinese_novel",
+      "locale": "zh_CN"
+    },
+    {
+      "name": "fansg",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/fansg/plugin.zip",
+      "version": 1,
+      "source": "http://m.fansg.com",
+      "icon": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/fansg/icon.png",
+      "description": "Đọc truyện trên trang fansg.com",
+      "type": "chinese_novel",
+      "locale": "zh_CN"
+    },
+    {
+      "name": "bqxs520",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/bqxs520/plugin.zip",
+      "version": 1,
+      "source": "http://www.bqxs520.com",
+      "icon": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/bqxs520/icon.png",
+      "description": "Đọc truyện trên trang bqxs520.com",
+      "type": "chinese_novel",
+      "locale": "zh_CN"
+    },
+    {
+      "name": "KeepShu",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/keepshu/plugin.zip",
+      "version": 1,
+      "source": "https://www.keepshu.com",
+      "icon": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/keepshu/icon.png",
+      "description": "Đọc truyện trên trang www.keepshu.com",
+      "type": "chinese_novel",
+      "locale": "zh_CN"
+    },
+    {
+      "name": "gongzicp",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/gongzicp/plugin.zip",
+      "version": 1,
+      "source": "https://www.gongzicp.com",
+      "icon": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/gongzicp/icon.png",
+      "description": "Đọc truyện trên trang www.gongzicp.com",
+      "type": "chinese_novel",
+      "locale": "zh_CN"
+    },
+    {
+      "name": "mibiquge",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/mibiquge/plugin.zip",
+      "version": 1,
+      "source": "https://www.mibiquge.com",
+      "icon": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/mibiquge/icon.png",
+      "description": "Đọc truyện trên trang www.mibiquge.com",
+      "type": "chinese_novel",
+      "locale": "zh_CN"
+    },
+    {
+      "name": "shubao45",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/shubao45/plugin.zip",
+      "version": 1,
+      "source": "http://m.shubao45.com",
+      "icon": "https://raw.githubusercontent.com/Darkrai9x/vbook-extensions/master/shubao45/icon.png",
+      "description": "Đọc truyện trên trang m.shubao45.com",
+      "type": "chinese_novel",
+      "locale": "zh_CN"
+    }
+  ]
+}

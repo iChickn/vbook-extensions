@@ -1,0 +1,21 @@
+{
+    "metadata": {
+        "name": "Sáng Tác Việt Local",
+        "author": "iChickn",
+        "version": 12,
+        "source": "https://sangtacvietfpt.com",
+        "regexp": "(www.)?sangtacvietfpt.com/truyen/([a-zA-Z0-9])+/\\d+/\\d+/?$",
+        "description": "Chuyển sang host mới!",
+        "locale": "vi-VN",
+        "language": "javascript",
+        "type": "novel"
+    },
+    "script": {
+        "home": "home.js",
+        "genre": "genre.js",
+        "search": "search.js",
+        "detail": "detail.js",
+        "toc": "toc.js",
+        "chap": "chap.js"
+    }
+}
