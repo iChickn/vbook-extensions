@@ -8,10 +8,10 @@
       "name": "Sáng Tác Việt Local",
       "author": "iChickn",
       "path": "https://raw.githubusercontent.com/PSV-LongPT/vbook-extensions/main/sangtacviet/plugin.zip",
-      "version": 12,
-      "source": "https://sangtacvietfpt.com",
+      "version": 13,
+      "source": "https://sangtacviet.vip",
       "icon": "https://raw.githubusercontent.com/PSV-LongPT/vbook-extensions/main/sangtacviet/icon.png",
-      "description": "Đọc truyện trên trang sangtacvietfpt.com",
+      "description": "Đọc truyện trên trang sangtacviet.vip",
       "type": "novel",
       "locale": "vi_VN"
     }

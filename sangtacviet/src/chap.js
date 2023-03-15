@@ -2,11 +2,11 @@ function execute(url) {
   if (url.slice(-1) !== "/") url = url + "/";
   const host = url.split('/truyen/')[0];
   const locationReplacement = url.split('/truyen/')[1];
-  const params = url.split('/truyen/')[1].split('/');
-  const bookId = params[2];
-  const chapId = params[3];
+  const params = locationReplacement.split('/');
   const bookHost = params[0];
   const bookSty = params[1];
+  const bookId = params[2];
+  const chapId = params[3];
   const lsKey = `${bookHost}${bookId}`;
   console.log(lsKey);
   const currentIdc = '';
@@ -17,19 +17,20 @@ function execute(url) {
 
   const namesys = fetch(bookNameSysUrl);
 
+  console.log(namesys.status);
   if (namesys.ok) {
     var namew = Html.parse(namesys.text().replace(/(?:\r\n|\r|\n)/g, '~//~')).select("div").first().text();
 
     var browser = Engine.newBrowser();
     browser.setUserAgent(UserAgent.android());
     // b_rowser.block([chapDetailUrl]);
-    browser.launch(url, 4000);
-    browser.callJs(`localStorage["${lsKey}"] = "${namew}";`, 500);
-    browser.callJs(setCookie, 500);
-    browser.callJs(`document.location='/truyen/${locationReplacement}';`, 5000);
-    //   b_rowser.waitUrl(qtOnline, 5000);
-    browser.callJs(`document.querySelector(".blk-item2").click();`, 2000);
+    browser.launch(url, 1000);
+    browser.callJs(`localStorage["${lsKey}"] = "${namew}";`, 100);
+    browser.callJs(setCookie, 100);
+    browser.callJs(`document.location='/truyen/${locationReplacement}';`, 2000);
+    // b1rowser.callJs(`document.querySelector(".blk-item2").click();`, 2000);
     browser.callJs(`document.querySelector("#content-container .contentbox").innerText = document.querySelector("#content-container .contentbox").innerText`, 500);
+
     const contentbox = browser.html().select("#content-container .contentbox").html();
 
     console.log(contentbox);
