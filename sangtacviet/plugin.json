@@ -2,7 +2,7 @@
     "metadata": {
         "name": "Sáng Tác Việt Local",
         "author": "iChickn",
-        "version": 13,
+        "version": 14,
         "source": "https://sangtacviet.vip",
         "regexp": "(www.)?sangtacviet.vip/truyen/([a-zA-Z0-9])+/\\d+/\\d+/?$",
         "description": "Chuyển sang host mới!",

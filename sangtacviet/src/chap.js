@@ -28,7 +28,7 @@ function execute(url) {
     browser.callJs(`localStorage["${lsKey}"] = "${namew}";`, 100);
     browser.callJs(setCookie, 100);
     browser.callJs(`document.location='/truyen/${locationReplacement}';`, 2000);
-    // b1rowser.callJs(`document.querySelector(".blk-item2").click();`, 2000);
+    browser.callJs(`document.querySelector(".blk-item2").click();`, 1000);
     browser.callJs(`document.querySelector("#content-container .contentbox").innerText = document.querySelector("#content-container .contentbox").innerText`, 500);
 
     const contentbox = browser.html().select("#content-container .contentbox").html();
