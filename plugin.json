@@ -7,12 +7,45 @@
     {
       "name": "Sáng Tác Việt Local",
       "author": "iChickn",
-      "path": "https://raw.githubusercontent.com/PSV-LongPT/vbook-extensions/main/sangtacviet/plugin.zip",
+      "path": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/sangtacviet/plugin.zip",
       "version": 14,
       "source": "https://sangtacviet.vip",
-      "icon": "https://raw.githubusercontent.com/PSV-LongPT/vbook-extensions/main/sangtacviet/icon.png",
+      "icon": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/sangtacviet/icon.png",
       "description": "Đọc truyện trên trang sangtacviet.vip",
       "type": "novel",
+      "locale": "vi_VN"
+    },
+    {
+      "name": "Mê Truyện CV",
+      "author": "iChickn",
+      "path": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/metruyencv2/plugin.zip",
+      "version": 21,
+      "source": "https://metruyencv.com",
+      "icon": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/metruyencv2/icon.png",
+      "description": "Đọc truyện trên trang Mê Truyện CV",
+      "type": "novel",
+      "locale": "vi_VN"
+    },
+    {
+      "name": "Chivi",
+      "author": "iChickn",
+      "path": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/chivi/plugin.zip",
+      "version": 1,
+      "source": "https://chivi.app/",
+      "icon": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/chivi/icon.png",
+      "description": "Đọc truyện trên trang Chivi.app",
+      "type": "novel",
+      "locale": "vi_VN"
+    },
+    {
+      "name": "ReadKomik",
+      "author": "iChickn",
+      "path": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/readkomik/plugin.zip",
+      "version": 1,
+      "source": "https://readkomik.com",
+      "icon": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/readkomik/icon.png",
+      "description": "Đọc truyện tranh trên trang ReadKomik",
+      "type": "comic",
       "locale": "vi_VN"
     }
   ]
