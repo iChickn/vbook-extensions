@@ -46,7 +46,7 @@
       "icon": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/readkomik/icon.png",
       "description": "Đọc truyện tranh trên trang ReadKomik",
       "type": "comic",
-      "locale": "vi_VN"
+      "locale": "en_US"
     }
   ]
 }
