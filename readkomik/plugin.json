@@ -2,7 +2,7 @@
   "metadata": {
     "name": "ReadKomik",
     "author": "iChickn",
-    "version": 1,
+    "version": 2,
     "source": "https://readkomik.com",
     "regexp": "(www.)?readkomik.(com|app)\/[^/+]+\/.*$",
     "description": "Đọc truyện tranh trên trang ReadKomik",

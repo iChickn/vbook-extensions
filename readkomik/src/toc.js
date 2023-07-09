@@ -9,11 +9,15 @@ function execute(url) {
             let e = cl.get(i)
             list.push({
                 name: e.select(".chapternum").text(),
+                chapter_num: e.select(".chapternum").match(/(\d+)/)[0],
                 url: e.select("a").attr("href"),
                 host: host
             })
         }
-        return Response.success(list.reverse())
+
+        list.sort((a,  b) => a.chapter_num - b.chapter_num)
+
+        return Response.success(list)
     }
     return null
 }
