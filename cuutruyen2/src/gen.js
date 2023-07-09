@@ -18,7 +18,8 @@ function execute(url, page) {
             next = metadata.current_page + 1;
         }
         let novels = [];
-        json.data.forEach(item => {
+        let data = json.data.mangas || json.data
+        data.forEach(item => {
             novels.push({
                 name: item.name,
                 link: "https://cuutruyen.net/mangas/" + item.id,
