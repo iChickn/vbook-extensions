@@ -41,7 +41,7 @@
       "name": "ReadKomik",
       "author": "iChickn",
       "path": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/readkomik/plugin.zip",
-      "version": 2,
+      "version": 3,
       "source": "https://readkomik.com",
       "icon": "https://raw.githubusercontent.com/iChickn/vbook-extensions/main/readkomik/icon.png",
       "description": "Đọc truyện tranh trên trang ReadKomik",

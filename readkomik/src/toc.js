@@ -9,7 +9,7 @@ function execute(url) {
             let e = cl.get(i)
             list.push({
                 name: e.select(".chapternum").text(),
-                chapter_num: e.select(".chapternum").match(/(\d+)/)[0],
+                chapter_num: e.select(".chapternum").text().match(/(\d+)/)[0],
                 url: e.select("a").attr("href"),
                 host: host
             })
