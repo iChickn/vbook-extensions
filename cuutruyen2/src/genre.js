@@ -1,0 +1,25 @@
+function execute() {
+    return Response.success([
+        {title: "Có màu", input: "https://kakarot.cuutruyen.net/api/v2/tags/co-mau?page=1&per_page=24", script: "gen.js"},
+        {title: "Hài hước", input: "https://kakarot.cuutruyen.net/api/v2/tags/hai-huoc?page=1&per_page=24", script: "gen.js"},
+        {title: "Đời thường", input: "https://kakarot.cuutruyen.net/api/v2/tags/doi-thuong?page=1&per_page=24", script: "gen.js"},
+        {title: "Học đường", input: "https://kakarot.cuutruyen.net/api/v2/tags/hoc-duong?page=1&per_page=24", script: "gen.js"},
+        {title: "Romcom", input: "https://kakarot.cuutruyen.net/api/v2/tags/romcom?page=1&per_page=24", script: "gen.js"},
+        {title: "Lãng mạn", input: "https://kakarot.cuutruyen.net/api/v2/tags/lang-man?page=1&per_page=24", script: "gen.js"},
+        {title: "Manga", input: "https://kakarot.cuutruyen.net/api/v2/tags/manga?page=1&per_page=24", script: "gen.js"},
+        {title: "Oneshot", input: "https://kakarot.cuutruyen.net/api/v2/tags/oneshot?page=1&per_page=24", script: "gen.js"},
+        {title: "Đã hoàn thành", input: "https://kakarot.cuutruyen.net/api/v2/tags/da-hoan-thanh?page=1&per_page=24", script: "gen.js"},
+        {title: "Đang tiến hành", input: "https://kakarot.cuutruyen.net/api/v2/tags/dang-tien-hanh?page=1&per_page=24", script: "gen.js"},
+        {title: "NSFW", input: "https://kakarot.cuutruyen.net/api/v2/tags/nsfw?page=1&per_page=24", script: "gen.js"},
+        {title: "Tình dục", input: "https://kakarot.cuutruyen.net/api/v2/tags/tinh-duc?page=1&per_page=24", script: "gen.js"},
+        {title: "Ecchi", input: "https://kakarot.cuutruyen.net/api/v2/tags/ecchi?page=1&per_page=24", script: "gen.js"},
+        {title: "Harem", input: "https://kakarot.cuutruyen.net/api/v2/tags/harem?page=1&per_page=24", script: "gen.js"},
+        {title: "Fantasy", input: "https://kakarot.cuutruyen.net/api/v2/tags/fantasy?page=1&per_page=24", script: "gen.js"},
+        {title: "Phiêu lưu", input: "https://kakarot.cuutruyen.net/api/v2/tags/phieu-luu?page=1&per_page=24", script: "gen.js"},
+        {title: "Hành động", input: "https://kakarot.cuutruyen.net/api/v2/tags/hanh-dong?page=1&per_page=24", script: "gen.js"},
+        {title: "Isekai", input: "https://kakarot.cuutruyen.net/api/v2/tags/isekai?page=1&per_page=24", script: "gen.js"},
+        {title: "Siêu nhiên", input: "https://kakarot.cuutruyen.net/api/v2/tags/sieu-nhien?page=1&per_page=24", script: "gen.js"},
+        {title: "Seinen", input: "https://kakarot.cuutruyen.net/api/v2/tags/seinen?page=1&per_page=24", script: "gen.js"},
+        {title: "Shounen", input: "https://kakarot.cuutruyen.net/api/v2/tags/shounen?page=1&per_page=24", script: "gen.js"},
+    ]);
+}
