@@ -2,9 +2,9 @@
     "metadata": {
         "name": "Sáng Tác Việt Local",
         "author": "iChickn",
-        "version": 14,
-        "source": "https://sangtacviet.vip",
-        "regexp": "(www.)?sangtacviet.vip/truyen/([a-zA-Z0-9])+/\\d+/\\d+/?$",
+        "version": 15,
+        "source": "https://sangtacviet.app",
+        "regexp": "(www.)?sangtacviet.app/truyen/([a-zA-Z0-9])+/\\d+/\\d+/?$",
         "description": "Chuyển sang host mới!",
         "locale": "vi-VN",
         "language": "javascript",
